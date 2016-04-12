@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		C27D1DAC1CBCB540009D5815 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C27D1DAB1CBCB540009D5815 /* main.m */; };
 		C27D1DAF1CBCB540009D5815 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C27D1DAE1CBCB540009D5815 /* AppDelegate.m */; };
-		C27D1DB21CBCB540009D5815 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C27D1DB11CBCB540009D5815 /* ViewController.m */; };
 		C27D1DB51CBCB540009D5815 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C27D1DB31CBCB540009D5815 /* Main.storyboard */; };
 		C27D1DB81CBCB540009D5815 /* Drawtest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C27D1DB61CBCB540009D5815 /* Drawtest.xcdatamodeld */; };
 		C27D1DBA1CBCB540009D5815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C27D1DB91CBCB540009D5815 /* Assets.xcassets */; };
 		C27D1DBD1CBCB540009D5815 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C27D1DBB1CBCB540009D5815 /* LaunchScreen.storyboard */; };
-		C27D1DC61CBCB5D5009D5815 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = C27D1DC51CBCB5D5009D5815 /* DrawView.m */; settings = {ASSET_TAGS = (); }; };
-		C27D1DC91CBCC52E009D5815 /* DrawManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C27D1DC81CBCC52E009D5815 /* DrawManager.m */; settings = {ASSET_TAGS = (); }; };
-		C27D1DCC1CBCCA97009D5815 /* DrawTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C27D1DCB1CBCCA97009D5815 /* DrawTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		C27D1DD81CBCE1E4009D5815 /* DrawTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C27D1DD51CBCE1E4009D5815 /* DrawTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		C27D1DD91CBCE1E4009D5815 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C27D1DD71CBCE1E4009D5815 /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
+		C27D1DDD1CBCE1F7009D5815 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = C27D1DDC1CBCE1F7009D5815 /* DrawView.m */; settings = {ASSET_TAGS = (); }; };
+		C27D1DE11CBCE203009D5815 /* DrawManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C27D1DE01CBCE203009D5815 /* DrawManager.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,19 +24,19 @@
 		C27D1DAB1CBCB540009D5815 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C27D1DAD1CBCB540009D5815 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C27D1DAE1CBCB540009D5815 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C27D1DB01CBCB540009D5815 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C27D1DB11CBCB540009D5815 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C27D1DB41CBCB540009D5815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C27D1DB71CBCB540009D5815 /* Drawtest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Drawtest.xcdatamodel; sourceTree = "<group>"; };
 		C27D1DB91CBCB540009D5815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C27D1DBC1CBCB540009D5815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C27D1DBE1CBCB541009D5815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C27D1DC41CBCB5D5009D5815 /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
-		C27D1DC51CBCB5D5009D5815 /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
-		C27D1DC71CBCC52E009D5815 /* DrawManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawManager.h; sourceTree = "<group>"; };
-		C27D1DC81CBCC52E009D5815 /* DrawManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawManager.m; sourceTree = "<group>"; };
-		C27D1DCA1CBCCA97009D5815 /* DrawTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawTableViewController.h; sourceTree = "<group>"; };
-		C27D1DCB1CBCCA97009D5815 /* DrawTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawTableViewController.m; sourceTree = "<group>"; };
+		C27D1DD41CBCE1E4009D5815 /* DrawTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawTableViewController.h; sourceTree = "<group>"; };
+		C27D1DD51CBCE1E4009D5815 /* DrawTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawTableViewController.m; sourceTree = "<group>"; };
+		C27D1DD61CBCE1E4009D5815 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C27D1DD71CBCE1E4009D5815 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C27D1DDB1CBCE1F7009D5815 /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
+		C27D1DDC1CBCE1F7009D5815 /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
+		C27D1DDF1CBCE203009D5815 /* DrawManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawManager.h; sourceTree = "<group>"; };
+		C27D1DE01CBCE203009D5815 /* DrawManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +71,9 @@
 			children = (
 				C27D1DAD1CBCB540009D5815 /* AppDelegate.h */,
 				C27D1DAE1CBCB540009D5815 /* AppDelegate.m */,
-				C27D1DD11CBCDDC1009D5815 /* Controller */,
-				C27D1DD21CBCDDD0009D5815 /* View */,
-				C27D1DD01CBCDDA0009D5815 /* DrawManager */,
+				C27D1DDA1CBCE1F7009D5815 /* View */,
+				C27D1DD31CBCE1E4009D5815 /* Controller */,
+				C27D1DDE1CBCE203009D5815 /* Manager */,
 				C27D1DB31CBCB540009D5815 /* Main.storyboard */,
 				C27D1DB91CBCB540009D5815 /* Assets.xcassets */,
 				C27D1DBB1CBCB540009D5815 /* LaunchScreen.storyboard */,
@@ -92,33 +92,33 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C27D1DD01CBCDDA0009D5815 /* DrawManager */ = {
+		C27D1DD31CBCE1E4009D5815 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C27D1DC71CBCC52E009D5815 /* DrawManager.h */,
-				C27D1DC81CBCC52E009D5815 /* DrawManager.m */,
+				C27D1DD41CBCE1E4009D5815 /* DrawTableViewController.h */,
+				C27D1DD51CBCE1E4009D5815 /* DrawTableViewController.m */,
+				C27D1DD61CBCE1E4009D5815 /* ViewController.h */,
+				C27D1DD71CBCE1E4009D5815 /* ViewController.m */,
 			);
-			name = DrawManager;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		C27D1DD11CBCDDC1009D5815 /* Controller */ = {
+		C27D1DDA1CBCE1F7009D5815 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C27D1DB01CBCB540009D5815 /* ViewController.h */,
-				C27D1DB11CBCB540009D5815 /* ViewController.m */,
-				C27D1DCA1CBCCA97009D5815 /* DrawTableViewController.h */,
-				C27D1DCB1CBCCA97009D5815 /* DrawTableViewController.m */,
+				C27D1DDB1CBCE1F7009D5815 /* DrawView.h */,
+				C27D1DDC1CBCE1F7009D5815 /* DrawView.m */,
 			);
-			name = Controller;
+			path = View;
 			sourceTree = "<group>";
 		};
-		C27D1DD21CBCDDD0009D5815 /* View */ = {
+		C27D1DDE1CBCE203009D5815 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				C27D1DC41CBCB5D5009D5815 /* DrawView.h */,
-				C27D1DC51CBCB5D5009D5815 /* DrawView.m */,
+				C27D1DDF1CBCE203009D5815 /* DrawManager.h */,
+				C27D1DE01CBCE203009D5815 /* DrawManager.m */,
 			);
-			name = View;
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,13 +191,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C27D1DB21CBCB540009D5815 /* ViewController.m in Sources */,
 				C27D1DAF1CBCB540009D5815 /* AppDelegate.m in Sources */,
+				C27D1DD81CBCE1E4009D5815 /* DrawTableViewController.m in Sources */,
+				C27D1DDD1CBCE1F7009D5815 /* DrawView.m in Sources */,
 				C27D1DAC1CBCB540009D5815 /* main.m in Sources */,
+				C27D1DE11CBCE203009D5815 /* DrawManager.m in Sources */,
 				C27D1DB81CBCB540009D5815 /* Drawtest.xcdatamodeld in Sources */,
-				C27D1DC61CBCB5D5009D5815 /* DrawView.m in Sources */,
-				C27D1DCC1CBCCA97009D5815 /* DrawTableViewController.m in Sources */,
-				C27D1DC91CBCC52E009D5815 /* DrawManager.m in Sources */,
+				C27D1DD91CBCE1E4009D5815 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +344,7 @@
 				C27D1DC31CBCB541009D5815 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
