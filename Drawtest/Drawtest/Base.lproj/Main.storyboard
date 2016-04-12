@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PcR-mH-Bhd" customClass="DrawView">
+                                <rect key="frame" x="20" y="20" width="374" height="616"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Mu-WB-TGp">
+                                <rect key="frame" x="0.0" y="646" width="414" height="80"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MdX-3p-EqQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sah-ei-agP">
+                                                <rect key="frame" x="8" y="7" width="66" height="66"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="1" green="0.96409032874680323" blue="0.031145477322594761" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Sah-ei-agP" secondAttribute="height" id="EyP-Wr-MkK"/>
+                                                </constraints>
+                                                <state key="normal" title="画笔颜色">
+                                                    <color key="titleColor" red="0.0" green="0.051177963712695007" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="drawColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AST-n0-mkr"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Sah-ei-agP" firstAttribute="centerX" secondItem="MdX-3p-EqQ" secondAttribute="centerX" id="HqN-cb-WjO"/>
+                                            <constraint firstItem="Sah-ei-agP" firstAttribute="centerY" secondItem="MdX-3p-EqQ" secondAttribute="centerY" id="LBd-yu-jTc"/>
+                                            <constraint firstItem="Sah-ei-agP" firstAttribute="width" secondItem="MdX-3p-EqQ" secondAttribute="width" multiplier="4/5" id="yW4-KX-JgV"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ney-lm-qNM">
+                                        <rect key="frame" x="83" y="0.0" width="83" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQE-kV-2vb">
+                                                <rect key="frame" x="8" y="7" width="66" height="66"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.30316540752970911" green="1" blue="0.21332269564171102" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="画笔粗细">
+                                                    <color key="titleColor" red="1" green="0.0" blue="0.87613995035982395" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="drawLineWidth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Fe-mq-5uJ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="gQE-kV-2vb" firstAttribute="centerY" secondItem="Ney-lm-qNM" secondAttribute="centerY" id="Ja6-KU-3o1"/>
+                                            <constraint firstItem="gQE-kV-2vb" firstAttribute="centerX" secondItem="Ney-lm-qNM" secondAttribute="centerX" id="LsY-HT-Kpu"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7bA-zx-T4Z">
+                                        <rect key="frame" x="166" y="0.0" width="83" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPG-Xq-uaK">
+                                                <rect key="frame" x="8" y="7" width="66" height="66"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.22463194811713472" green="0.91754599300445872" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="撤销">
+                                                    <color key="titleColor" red="1" green="0.018721711901257154" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="drawRevoke:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uVP-On-qM9"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="MPG-Xq-uaK" firstAttribute="centerX" secondItem="7bA-zx-T4Z" secondAttribute="centerX" id="FTQ-as-S4l"/>
+                                            <constraint firstItem="MPG-Xq-uaK" firstAttribute="centerY" secondItem="7bA-zx-T4Z" secondAttribute="centerY" id="dZx-JE-X9c"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R8c-fK-2sG">
+                                        <rect key="frame" x="249" y="0.0" width="83" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7G-al-gUq">
+                                                <rect key="frame" x="9" y="7" width="66" height="66"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="1" green="0.95947815080226428" blue="0.9577588153632377" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="橡皮">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="drawEraser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XXZ-ng-s7R"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Q7G-al-gUq" firstAttribute="centerY" secondItem="R8c-fK-2sG" secondAttribute="centerY" id="MF9-Un-aOK"/>
+                                            <constraint firstItem="Q7G-al-gUq" firstAttribute="centerX" secondItem="R8c-fK-2sG" secondAttribute="centerX" id="zDJ-Di-cnu"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EwB-d5-lsG">
+                                        <rect key="frame" x="332" y="0.0" width="82" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2e-oS-GgH">
+                                                <rect key="frame" x="8" y="7" width="66" height="66"/>
+                                                <animations/>
+                                                <color key="backgroundColor" red="0.47742957107646" green="0.46456371099967025" blue="0.49453124999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="清空">
+                                                    <color key="titleColor" red="0.96541840596819717" green="0.93940213282713736" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="drawClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wEH-AX-d5R"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Y2e-oS-GgH" firstAttribute="centerX" secondItem="EwB-d5-lsG" secondAttribute="centerX" id="Ffh-oz-wK9"/>
+                                            <constraint firstItem="Y2e-oS-GgH" firstAttribute="centerY" secondItem="EwB-d5-lsG" secondAttribute="centerY" id="WBn-20-Xun"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="EwB-d5-lsG" secondAttribute="bottom" id="8a3-Kh-leI"/>
+                                    <constraint firstItem="MPG-Xq-uaK" firstAttribute="width" secondItem="Sah-ei-agP" secondAttribute="width" id="Bg8-kv-F1L"/>
+                                    <constraint firstItem="7bA-zx-T4Z" firstAttribute="width" secondItem="MdX-3p-EqQ" secondAttribute="width" id="CSJ-ja-SgO"/>
+                                    <constraint firstItem="Ney-lm-qNM" firstAttribute="width" secondItem="MdX-3p-EqQ" secondAttribute="width" id="FKe-GL-lst"/>
+                                    <constraint firstItem="EwB-d5-lsG" firstAttribute="top" secondItem="7Mu-WB-TGp" secondAttribute="top" id="FLs-MX-qbz"/>
+                                    <constraint firstItem="R8c-fK-2sG" firstAttribute="width" secondItem="MdX-3p-EqQ" secondAttribute="width" id="Fbl-vF-Tw0"/>
+                                    <constraint firstItem="Y2e-oS-GgH" firstAttribute="width" secondItem="Sah-ei-agP" secondAttribute="width" id="GNu-T0-UtR"/>
+                                    <constraint firstItem="gQE-kV-2vb" firstAttribute="width" secondItem="Sah-ei-agP" secondAttribute="width" id="IqR-cM-fm7"/>
+                                    <constraint firstItem="EwB-d5-lsG" firstAttribute="leading" secondItem="R8c-fK-2sG" secondAttribute="trailing" id="My7-K7-dge"/>
+                                    <constraint firstItem="Q7G-al-gUq" firstAttribute="height" secondItem="Sah-ei-agP" secondAttribute="height" id="Y85-Xp-KFX"/>
+                                    <constraint firstItem="Q7G-al-gUq" firstAttribute="width" secondItem="Sah-ei-agP" secondAttribute="width" id="g6d-zT-wIt"/>
+                                    <constraint firstItem="MPG-Xq-uaK" firstAttribute="height" secondItem="Sah-ei-agP" secondAttribute="height" id="hP3-yZ-XZ9"/>
+                                    <constraint firstItem="Y2e-oS-GgH" firstAttribute="height" secondItem="Sah-ei-agP" secondAttribute="height" id="rwN-Jl-RDO"/>
+                                    <constraint firstItem="gQE-kV-2vb" firstAttribute="height" secondItem="Sah-ei-agP" secondAttribute="height" id="yBI-Vl-aU3"/>
+                                    <constraint firstAttribute="trailing" secondItem="EwB-d5-lsG" secondAttribute="trailing" id="zbe-lX-w6b"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="0.3045833196288793" blue="0.2981833797471104" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="PcR-mH-Bhd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="3Xg-yR-eil"/>
+                            <constraint firstItem="MdX-3p-EqQ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1/5" id="HRc-eD-pub"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PcR-mH-Bhd" secondAttribute="bottom" constant="100" id="L7f-ZO-1od"/>
+                            <constraint firstItem="7Mu-WB-TGp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XoU-Pw-9t7"/>
+                            <constraint firstAttribute="trailing" secondItem="PcR-mH-Bhd" secondAttribute="trailing" constant="20" id="b51-DC-Agx"/>
+                            <constraint firstAttribute="bottom" secondItem="7Mu-WB-TGp" secondAttribute="bottom" constant="10" id="kXC-17-hk3"/>
+                            <constraint firstItem="7Mu-WB-TGp" firstAttribute="top" secondItem="PcR-mH-Bhd" secondAttribute="bottom" constant="10" id="kgl-Ud-QIa"/>
+                            <constraint firstItem="PcR-mH-Bhd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="m2z-bZ-RBK"/>
+                            <constraint firstAttribute="trailing" secondItem="7Mu-WB-TGp" secondAttribute="trailing" id="rSi-rJ-jjG"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="drawView" destination="PcR-mH-Bhd" id="hyX-fw-wz6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="311" y="392"/>
+        </scene>
+    </scenes>
+</document>
