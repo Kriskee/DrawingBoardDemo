@@ -51,6 +51,10 @@
             path.lineWidth = aPath.lineWidth;
         }
         
+        // line首位圆角模式
+        path.lineCapStyle = kCGLineCapRound;
+        // line拐角圆角模式
+        path.lineJoinStyle = kCGLineJoinRound;
         [path stroke];
         
     }
